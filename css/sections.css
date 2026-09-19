@@ -57,12 +57,19 @@
 }
 
 @keyframes marqueeScroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .marquee-track { animation: none; }
+  .marquee-track {
+    animation: none;
+  }
 }
 
 /* ── Section: The Problem ──────────────────────────────────── */
@@ -234,7 +241,7 @@
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.04em;
-  color: var(--gray-100);
+  color: var(--gray-500);
   align-self: center;
   user-select: none;
   transition: color 0.4s ease;
@@ -278,6 +285,8 @@
 @media (max-width: 768px) {
   .stage {
     grid-template-columns: 1fr !important;
+    /* Tighter vertical rhythm on mobile — stages feel sequential, not separated */
+    padding-block: 1.75rem;
   }
 
   .stage:nth-child(even) .stage__number,
@@ -354,7 +363,7 @@
   transform: translateX(0);
 }
 
-.service-item > * {
+.service-item>* {
   position: relative;
   z-index: 1;
 }
@@ -464,7 +473,7 @@
   direction: rtl;
 }
 
-.project:nth-child(even) > * {
+.project:nth-child(even)>* {
   direction: ltr;
 }
 
@@ -579,6 +588,7 @@
 
 /* ── Tablet: tighten columns, keep 2-col if room ───────────── */
 @media (max-width: 1024px) {
+
   .project:nth-child(odd),
   .project:nth-child(even) {
     gap: 2rem 3rem;
@@ -587,6 +597,7 @@
 
 /* ── Tablet → mobile collapse ────────────────────────────── */
 @media (max-width: 900px) {
+
   /* Collapse ALL projects to a single column, regardless of nth-child */
   .project,
   .project:nth-child(odd),
@@ -598,7 +609,7 @@
   }
 
   /* Undo direction:rtl on even children */
-  .project:nth-child(even) > * {
+  .project:nth-child(even)>* {
     direction: ltr;
   }
 
@@ -695,13 +706,11 @@
   top: 0;
   bottom: 0;
   width: 1px;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    var(--gray-100) 10%,
-    var(--gray-100) 90%,
-    transparent 100%
-  );
+  background: linear-gradient(to bottom,
+      transparent 0%,
+      var(--gray-100) 10%,
+      var(--gray-100) 90%,
+      transparent 100%);
 }
 
 .process-step {
@@ -787,7 +796,7 @@
 }
 
 .why__eyebrow {
-  color: rgba(255,255,255,0.4);
+  color: rgba(255, 255, 255, 0.4);
   margin-bottom: 2rem;
 }
 
@@ -806,7 +815,7 @@
   font-size: clamp(1.0625rem, 1.5vw, 1.1875rem);
   font-weight: 300;
   line-height: 1.8;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 4rem;
 }
 
@@ -830,7 +839,7 @@
   font-family: var(--font-display);
   font-size: clamp(1.25rem, 2.5vw, 2.25rem);
   font-weight: 400;
-  color: rgba(255,255,255,0.18);
+  color: rgba(255, 255, 255, 0.18);
   transition: color 0.4s ease;
   cursor: default;
 }
@@ -956,7 +965,7 @@
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.04em;
-  color: rgba(255,255,255,0.025);
+  color: rgba(255, 255, 255, 0.025);
   white-space: nowrap;
   user-select: none;
 }
@@ -970,7 +979,7 @@
 }
 
 .cta-final__eyebrow {
-  color: rgba(255,255,255,0.35);
+  color: rgba(255, 255, 255, 0.35);
   margin-bottom: 2rem;
 }
 
@@ -993,7 +1002,7 @@
   font-size: clamp(1rem, 1.3vw, 1.125rem);
   font-weight: 300;
   line-height: 1.7;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255, 255, 255, 0.55);
   max-width: 500px;
   margin-inline: auto;
   margin-bottom: 3rem;
@@ -1019,6 +1028,15 @@
 }
 
 @keyframes dotPulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.5; transform: scale(0.7); }
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(0.7);
+  }
 }
