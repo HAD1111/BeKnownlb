@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="BeKnown — Digital experiences built to make your business impossible to overlook. Websites, stores, digital menus and custom digital experiences that help businesses get seen, remembered and chosen.">
+  <meta property="og:title" content="BeKnown — Websites That Make an Impression">
+  <meta property="og:description"
+    content="Get Known. Get Noticed. Get Chosen. Get Sales. Premium digital studio for businesses that refuse to be overlooked.">
+  <meta property="og:image" content="images/logo/beknownlb_logo.jpg">
+  <meta property="og:url" content="https://beknownlb.com">
+  <meta name="theme-color" content="#2068D8">
+
+  <title>BeKnown — Websites That Make an Impression</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/platform.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body class="page-enter">
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════════════ -->
+  <header class="nav" role="banner">
+    <a href="#" class="nav__logo" aria-label="BeKnown — Home">
+      <img src="images/logo/beknownlb_logo.jpg" alt="BeKnown" class="nav__logo-img" width="120" height="36">
+    </a>
+
+    <nav class="nav__links" aria-label="Main navigation">
+      <a href="#work" class="nav__link">Work</a>
+      <a href="#services" class="nav__link">Services</a>
+      <a href="#platform" class="nav__link">Platform</a>
+      <a href="#about" class="nav__link">About</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="https://had1111.github.io/PlatformOS/" target="_blank" rel="noopener" class="nav__partner">
+        Partner Login
+      </a>
+      <a href="https://wa.me/9613392425" class="nav__cta">
+        Start a Project <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile drawer -->
+  <nav class="nav__mobile-drawer" aria-label="Mobile navigation">
+    <ul class="nav__mobile-links">
+      <li><a href="#work" class="nav__mobile-link">Work</a></li>
+      <li><a href="#services" class="nav__mobile-link">Services</a></li>
+      <li><a href="#platform" class="nav__mobile-link">Platform</a></li>
+      <li><a href="#about" class="nav__mobile-link">About</a></li>
+    </ul>
+    <div class="nav__mobile-bottom">
+      <a href="https://had1111.github.io/PlatformOS/" target="_blank" rel="noopener" class="nav__mobile-partner">
+        Partner Login ↗
+      </a>
+      <a href="https://wa.me/9613392425" class="btn btn--primary">
+        Start a Project <span class="btn-arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════════════════ -->
+    <section class="hero" aria-labelledby="hero-headline">
+
+      <!-- Subtle watermark -->
+      <div class="hero__bg" aria-hidden="true">
+        <span class="hero__watermark">B</span>
+      </div>
+
+      <!-- Decorative SVG line — begins journey -->
+      <svg class="hero__svg-container flowing-line-svg" aria-hidden="true" viewBox="0 0 1440 900"
+        preserveAspectRatio="none">
+        <path id="hero-line-path" data-line-path class="flowing-line-path"
+          d="M 180 780 C 300 700, 500 620, 720 580 C 940 540, 1100 500, 1300 360" />
+        <!-- BeKnown dot endpoint -->
+        <circle cx="1300" cy="360" r="5" fill="#2068D8" opacity="0.5" id="hero-dot" />
+      </svg>
+
+      <div class="hero__inner">
+        <!-- Eyebrow -->
+        <p class="t-label t-label--blue hero__label" aria-hidden="true">
+          beknownlb.com
+        </p>
+
+        <!-- Main editorial headline -->
+        <h1 class="hero__headline" id="hero-headline" aria-label="Get Known. Get Noticed. Get Chosen. Get Sales.">
+          <span class="hero__line" style="transition-delay: 0.1s;">GET KNOWN.</span>
+          <span class="hero__line" style="transition-delay: 0.28s;">GET NOTICED.</span>
+          <span class="hero__line" style="transition-delay: 0.46s;">GET CHOSEN.</span>
+          <span class="hero__line hero__line--sales" style="transition-delay: 0.64s;">
+            GET SALES<span class="dot" aria-hidden="true">.</span>
+          </span>
+        </h1>
+
+        <!-- Supporting text -->
+        <p class="t-body-lg hero__body" style="max-width: 520px; color: #7A8499;">
+          Digital experiences built to make your business<br>
+          impossible to overlook.
+        </p>
+
+        <!-- CTAs -->
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary" style="font-size:0.75rem; letter-spacing: 0.12em;">
+            START A PROJECT <span class="btn-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a href="#work" class="btn btn--ghost" style="font-size:0.75rem; letter-spacing: 0.12em;">
+            EXPLORE OUR WORK <span class="btn-arrow" aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="hero__scroll-cue" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ── Subtle marquee strip ─────────────────────────────── -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">Get Known<span class="marquee-sep"></span></span>
+        <span class="marquee-item">Get Noticed<span class="marquee-sep"></span></span>
+        <span class="marquee-item">Get Chosen<span class="marquee-sep"></span></span>
+        <span class="marquee-item">Get Sales<span class="marquee-sep"></span></span>
+        <span class="marquee-item">Digital Presence<span class="marquee-sep"></span></span>
+        <span class="marquee-item">Make an Impression<span class="marquee-sep"></span></span>
+        <span class="marquee-item">Get Known<span class="marquee-sep"></span></span>
+        <span class="marquee-item">Get Noticed<span class="marquee-sep"></span></span>
+        <span class="marquee-item">Get Chosen<span class="marquee-sep"></span></span>
+        <span class="marquee-item">Get Sales<span class="marquee-sep"></span></span>
+        <span class="marquee-item">Digital Presence<span class="marquee-sep"></span></span>
+        <span class="marquee-item">Make an Impression<span class="marquee-sep"></span></span>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════
+         THE PROBLEM
+    ═══════════════════════════════════════════════════════ -->
+    <section class="problem" aria-labelledby="problem-headline">
+      <div class="problem__inner">
+
+        <div class="problem__headline reveal">
+          <h2 class="problem__headline-text" id="problem-headline">
+            BEING ONLINE<br>ISN'T ENOUGH.
+          </h2>
+          <p class="problem__sub">You need to be known.</p>
+        </div>
+
+        <div class="problem__content reveal delay-2">
+          <div class="problem__body">
+            <p>
+              A website can exist without making an impression.<br>
+              A social page can exist without creating trust.<br>
+              A business can exist online and still remain invisible.
+            </p>
+            <p>
+              We believe your digital presence should do more.
+            </p>
+            <p>
+              It should make people stop.<br>
+              Look.<br>
+              Remember.<br>
+              <strong>Choose.</strong>
+            </p>
+          </div>
+        </div>
+
+        <!-- Decorative end rule with dot -->
+        <div class="problem__rule reveal delay-3" aria-hidden="true">
+          <div class="problem__rule-line"></div>
+          <div class="problem__rule-dot"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         THE BEKNOWN JOURNEY — 01–04
+    ═══════════════════════════════════════════════════════ -->
+    <section class="journey" aria-labelledby="journey-headline" id="journey">
+      <div class="journey__header reveal">
+        <p class="t-label t-label--blue" aria-hidden="true">The BeKnown Journey</p>
+        <h2 class="t-display-md c-navy" id="journey-headline" style="margin-top:1rem;">
+          Every business deserves<br>
+          <em style="font-style:italic; color:var(--blue);">to be chosen.</em>
+        </h2>
+      </div>
+
+      <div class="journey__stages">
+
+        <!-- Stage 01 -->
+        <article class="stage" aria-labelledby="stage-01-title">
+          <div class="stage__number" aria-hidden="true">01</div>
+          <div class="stage__content">
+            <p class="stage__index">01 — Foundation</p>
+            <h3 class="stage__title" id="stage-01-title">GET KNOWN</h3>
+            <p class="stage__body">
+              Build a digital presence that tells people who you are. Establish your brand, your story, your identity —
+              clearly and confidently.
+            </p>
+          </div>
+        </article>
+
+        <!-- Stage 02 -->
+        <article class="stage" aria-labelledby="stage-02-title">
+          <div class="stage__number" aria-hidden="true">02</div>
+          <div class="stage__content">
+            <p class="stage__index">02 — Visibility</p>
+            <h3 class="stage__title" id="stage-02-title">GET NOTICED</h3>
+            <p class="stage__body">
+              Give people a reason to stop scrolling and pay attention. A great digital experience earns attention — it
+              doesn't ask for it.
+            </p>
+          </div>
+        </article>
+
+        <!-- Stage 03 -->
+        <article class="stage" aria-labelledby="stage-03-title">
+          <div class="stage__number" aria-hidden="true">03</div>
+          <div class="stage__content">
+            <p class="stage__index">03 — Trust</p>
+            <h3 class="stage__title" id="stage-03-title">GET CHOSEN</h3>
+            <p class="stage__body">
+              Turn attention into confidence, trust and action. The right digital experience makes your business the
+              obvious choice.
+            </p>
+          </div>
+        </article>
+
+        <!-- Stage 04 -->
+        <article class="stage" aria-labelledby="stage-04-title">
+          <div class="stage__number" aria-hidden="true">04</div>
+          <div class="stage__content">
+            <p class="stage__index">04 — Results</p>
+            <h3 class="stage__title" id="stage-04-title">GET SALES</h3>
+            <p class="stage__body">
+              Create digital experiences designed to support real business. Your online presence should contribute to
+              what matters: growth.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         WHAT WE BUILD
+    ═══════════════════════════════════════════════════════ -->
+    <section class="services" id="services" aria-labelledby="services-headline">
+
+      <div class="services__header">
+        <p class="t-label t-label--blue reveal">What We Build</p>
+        <h2 class="services__headline reveal delay-1" id="services-headline">
+          WHAT WE BUILD<br>STARTS WITH<br>WHAT YOU NEED.
+        </h2>
+      </div>
+
+      <ul class="services__list" data-stagger>
+
+        <li class="service-item">
+          <span class="service-item__num">01</span>
+          <span class="service-item__name">E-Commerce</span>
+          <span class="service-item__desc">Online stores designed to turn browsing into buying.</span>
+        </li>
+
+        <li class="service-item">
+          <span class="service-item__num">02</span>
+          <span class="service-item__name">Digital Menus</span>
+          <span class="service-item__desc">Beautiful, fast digital menus built for modern restaurants.</span>
+        </li>
+
+        <li class="service-item">
+          <span class="service-item__num">03</span>
+          <span class="service-item__name">Portfolios</span>
+          <span class="service-item__desc">Digital spaces that make your work speak for itself.</span>
+        </li>
+
+        <li class="service-item">
+          <span class="service-item__num">04</span>
+          <span class="service-item__name">Business Websites</span>
+          <span class="service-item__desc">Professional websites built around your business and your customers.</span>
+        </li>
+
+        <li class="service-item">
+          <span class="service-item__num">05</span>
+          <span class="service-item__name">Landing Pages</span>
+          <span class="service-item__desc">Focused digital experiences built around a single goal.</span>
+        </li>
+
+        <li class="service-item">
+          <span class="service-item__num">06</span>
+          <span class="service-item__name">Custom Websites</span>
+          <span class="service-item__desc">When a template isn't enough, we build something uniquely yours.</span>
+        </li>
+
+        <li class="service-item">
+          <span class="service-item__num">07</span>
+          <span class="service-item__name">Web Applications</span>
+          <span class="service-item__desc">Custom digital tools, dashboards and experiences built around how your
+            business works.</span>
+        </li>
+
+        <li class="service-item">
+          <span class="service-item__num">08</span>
+          <span class="service-item__name">Restaurant Websites</span>
+          <span class="service-item__desc">Digital homes for restaurants that go beyond the menu.</span>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SELECTED WORK
+    ═══════════════════════════════════════════════════════ -->
+    <section class="work" id="work" aria-labelledby="work-headline">
+
+      <div class="work__header">
+        <p class="t-label work__eyebrow reveal">Selected Work</p>
+        <h2 class="work__headline reveal delay-1" id="work-headline">
+          MADE TO<br>BE REMEMBERED.
+        </h2>
+      </div>
+
+      <div class="projects">
+
+        <!-- Project 1: Ali Murad -->
+        <article class="project reveal" aria-labelledby="project-1-title">
+          <div class="project__meta">
+            <p class="t-label project__category">Portfolio / Personal Brand</p>
+            <h3 class="project__title" id="project-1-title">Ali Murad</h3>
+            <p class="project__desc">
+              Lifestyle, expertise and personal brand brought together through a digital experience that stands out.
+            </p>
+            <a href="https://had1111.github.io/Ali-Murad/" target="_blank" rel="noopener" class="project__link">
+              View Project <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="project__visual reveal-scale delay-2">
+            <div class="project__iframe-wrap">
+              <iframe data-src="https://had1111.github.io/Ali-Murad/" title="Ali Murad — Portfolio" loading="lazy"
+                sandbox="allow-scripts allow-same-origin"></iframe>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Lumé -->
+        <article class="project reveal" aria-labelledby="project-2-title">
+          <div class="project__meta">
+            <p class="t-label project__category">Restaurant / Digital Menu</p>
+            <h3 class="project__title" id="project-2-title">Lumé</h3>
+            <p class="project__desc">
+              A modern restaurant experience built around discovery, menu browsing and brand identity.
+            </p>
+            <a href="https://had1111.github.io/PlatformOS/restaurants/lume/index.html" target="_blank" rel="noopener"
+              class="project__link">
+              View Project <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="project__visual reveal-scale delay-2">
+            <div class="project__iframe-wrap">
+              <iframe data-src="https://had1111.github.io/PlatformOS/restaurants/lume/index.html"
+                title="Lumé Restaurant — Digital Menu" loading="lazy"
+                sandbox="allow-scripts allow-same-origin"></iframe>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: SunBlend -->
+        <article class="project reveal" aria-labelledby="project-3-title">
+          <div class="project__meta">
+            <p class="t-label project__category">Informative Website</p>
+            <h3 class="project__title" id="project-3-title">SunBlend</h3>
+            <p class="project__desc">
+              A clean, informative digital presence that communicates clearly and builds confidence.
+            </p>
+            <a href="https://had1111.github.io/sunblendlb/" target="_blank" rel="noopener" class="project__link">
+              View Project <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="project__visual reveal-scale delay-2">
+            <div class="project__iframe-wrap">
+              <iframe data-src="https://had1111.github.io/sunblendlb/" title="SunBlend Lebanon" loading="lazy"
+                sandbox="allow-scripts allow-same-origin"></iframe>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         BEKNOWN PLATFORM
+    ═══════════════════════════════════════════════════════ -->
+    <section class="platform" id="platform" aria-labelledby="platform-headline">
+
+      <!-- Intro -->
+      <div class="platform__intro">
+        <p class="platform__for reveal">For Restaurants.</p>
+        <h2 class="platform__headline reveal delay-1" id="platform-headline">
+          YOUR MENU<br>DESERVES MORE<br>THAN A QR CODE.
+        </h2>
+        <p class="platform__sub reveal delay-2">
+          BeKnown Platform gives restaurants a digital home for their menu, brand and customers — all in one place,
+          always up to date.
+        </p>
+        <div class="reveal delay-3">
+          <a href="https://had1111.github.io/PlatformOS/" target="_blank" rel="noopener" class="btn btn--primary"
+            style="font-size:0.75rem; letter-spacing:0.12em;">
+            EXPLORE BEKNOWN PLATFORM <span class="btn-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Product showcase -->
+      <div class="platform__showcase">
+        <div class="platform__showcase-inner">
+
+          <!-- Phone mockup -->
+          <div class="platform__screen reveal-scale" aria-hidden="true">
+            <div class="platform__screen-frame">
+              <div class="platform__screen-bar">
+                <span class="platform__screen-dot"></span>
+                <span class="platform__screen-dot"></span>
+                <span class="platform__screen-dot"></span>
+              </div>
+              <div class="platform__screen-content">
+                <iframe class="platform__screen-iframe"
+                  data-src="https://had1111.github.io/PlatformOS/restaurants/lume/index.html"
+                  title="BeKnown Platform preview" scrolling="no" frameborder="0"
+                  sandbox="allow-scripts allow-same-origin"></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature explanation -->
+          <div class="platform__info reveal delay-2">
+            <p class="platform__info-tag">BeKnown Platform</p>
+            <h3 class="platform__info-headline">
+              A complete digital home<br>for your restaurant.
+            </h3>
+
+            <!-- Customer flow -->
+            <div class="platform__flow" style="margin-bottom: 1.5rem;">
+              <p
+                style="font-size:0.625rem; letter-spacing:0.2em; text-transform:uppercase; color:rgba(255,255,255,0.3); margin-bottom:0.75rem;">
+                Your customers
+              </p>
+              <div class="platform__flow-item">
+                <div class="platform__flow-icon"></div>
+                <p class="platform__flow-text"><strong>Discover</strong> your restaurant</p>
+              </div>
+              <div class="platform__flow-item">
+                <div class="platform__flow-icon"></div>
+                <p class="platform__flow-text"><strong>Browse</strong> your digital menu</p>
+              </div>
+              <div class="platform__flow-item">
+                <div class="platform__flow-icon"></div>
+                <p class="platform__flow-text"><strong>Explore</strong> dishes, pricing and availability</p>
+              </div>
+              <div class="platform__flow-item">
+                <div class="platform__flow-icon"></div>
+                <p class="platform__flow-text"><strong>Connect</strong> directly with your business</p>
+              </div>
+            </div>
+
+            <!-- Restaurant flow -->
+            <div class="platform__flow" style="margin-bottom: 2.5rem;">
+              <p
+                style="font-size:0.625rem; letter-spacing:0.2em; text-transform:uppercase; color:rgba(255,255,255,0.3); margin-bottom:0.75rem;">
+                You, the restaurant
+              </p>
+              <div class="platform__flow-item">
+                <div class="platform__flow-icon"></div>
+                <p class="platform__flow-text"><strong>Log in</strong> to your Partner Dashboard</p>
+              </div>
+              <div class="platform__flow-item">
+                <div class="platform__flow-icon"></div>
+                <p class="platform__flow-text"><strong>Manage</strong> your menu, categories and products</p>
+              </div>
+              <div class="platform__flow-item">
+                <div class="platform__flow-icon"></div>
+                <p class="platform__flow-text"><strong>Update</strong> prices, availability and images</p>
+              </div>
+              <div class="platform__flow-item">
+                <div class="platform__flow-icon"></div>
+                <p class="platform__flow-text"><strong>Keep</strong> your digital presence always current</p>
+              </div>
+            </div>
+
+            <div class="platform__ctas">
+              <a href="https://had1111.github.io/PlatformOS/" target="_blank" rel="noopener" class="btn btn--primary"
+                style="font-size:0.7rem; letter-spacing:0.1em;">
+                EXPLORE PLATFORM <span class="btn-arrow" aria-hidden="true">↗</span>
+              </a>
+              <a href="https://had1111.github.io/PlatformOS/" target="_blank" rel="noopener"
+                class="btn btn--ghost-white" style="font-size:0.7rem; letter-spacing:0.1em;">
+                PARTNER LOGIN <span class="btn-arrow" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Feature list -->
+      <div class="platform__features">
+        <h3 class="platform__features-headline reveal">Everything you need. Nothing you don't.</h3>
+        <div class="platform__feature-list" data-stagger>
+          <div class="platform__feature">
+            <p class="platform__feature-name">Digital Menu</p>
+            <p class="platform__feature-desc">Beautiful, browsable menu always available online.</p>
+          </div>
+          <div class="platform__feature">
+            <p class="platform__feature-name">Restaurant Profile</p>
+            <p class="platform__feature-desc">Your brand, story and contact details in one place.</p>
+          </div>
+          <div class="platform__feature">
+            <p class="platform__feature-name">Menu Management</p>
+            <p class="platform__feature-desc">Update your menu yourself, anytime, instantly.</p>
+          </div>
+          <div class="platform__feature">
+            <p class="platform__feature-name">Product Management</p>
+            <p class="platform__feature-desc">Add, edit or remove dishes with full control.</p>
+          </div>
+          <div class="platform__feature">
+            <p class="platform__feature-name">Categories</p>
+            <p class="platform__feature-desc">Organise your menu intuitively for customers.</p>
+          </div>
+          <div class="platform__feature">
+            <p class="platform__feature-name">Images & Pricing</p>
+            <p class="platform__feature-desc">High-quality visuals and clear pricing on every item.</p>
+          </div>
+          <div class="platform__feature">
+            <p class="platform__feature-name">Availability Control</p>
+            <p class="platform__feature-desc">Mark items as available or unavailable in real time.</p>
+          </div>
+          <div class="platform__feature">
+            <p class="platform__feature-name">Partner Dashboard</p>
+            <p class="platform__feature-desc">Simple, clean management interface built for operators.</p>
+          </div>
+          <div class="platform__feature">
+            <p class="platform__feature-name">Always Accessible</p>
+            <p class="platform__feature-desc">No app required. Works on any device, any browser.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         HOW WE WORK
+    ═══════════════════════════════════════════════════════ -->
+    <section class="process" aria-labelledby="process-headline">
+
+      <div class="process__header">
+        <p class="t-label t-label--blue reveal">How We Work</p>
+        <h2 class="process__headline reveal delay-1" id="process-headline">
+          FROM IDEA<br>TO ONLINE.
+        </h2>
+      </div>
+
+      <div class="process__steps">
+        <div class="process__path" aria-hidden="true"></div>
+
+        <div class="process-step">
+          <div class="process-step__indicator" aria-hidden="true">
+            <div class="process-step__dot"></div>
+            <span class="process-step__num">01</span>
+          </div>
+          <div class="process-step__content">
+            <h3 class="process-step__title">Discover</h3>
+            <p class="process-step__body">
+              We start by understanding your business, your audience and what you're trying to achieve. Good work starts
+              with good listening.
+            </p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-step__indicator" aria-hidden="true">
+            <div class="process-step__dot"></div>
+            <span class="process-step__num">02</span>
+          </div>
+          <div class="process-step__content">
+            <h3 class="process-step__title">Define</h3>
+            <p class="process-step__body">
+              We establish the structure, content strategy and visual direction. This is where the project gets its
+              foundation.
+            </p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-step__indicator" aria-hidden="true">
+            <div class="process-step__dot"></div>
+            <span class="process-step__num">03</span>
+          </div>
+          <div class="process-step__content">
+            <h3 class="process-step__title">Design</h3>
+            <p class="process-step__body">
+              We create the visual experience — the layout, typography, colour and interactions. Every detail is
+              intentional.
+            </p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-step__indicator" aria-hidden="true">
+            <div class="process-step__dot"></div>
+            <span class="process-step__num">04</span>
+          </div>
+          <div class="process-step__content">
+            <h3 class="process-step__title">Build</h3>
+            <p class="process-step__body">
+              We develop the website with performance and responsiveness at the centre. Fast, clean, accessible by
+              default.
+            </p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-step__indicator" aria-hidden="true">
+            <div class="process-step__dot"></div>
+            <span class="process-step__num">05</span>
+          </div>
+          <div class="process-step__content">
+            <h3 class="process-step__title">Launch</h3>
+            <p class="process-step__body">
+              We make it live and ensure everything is ready to be discovered. Your business, online and ready to be
+              known.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         WHY BEKNOWN
+    ═══════════════════════════════════════════════════════ -->
+    <section class="why" aria-labelledby="why-headline">
+      <div class="why__inner">
+
+        <p class="t-label why__eyebrow reveal">Not Just a Website</p>
+
+        <h2 class="why__headline reveal delay-1" id="why-headline">
+          NOT JUST<br>A WEBSITE.
+        </h2>
+
+        <div class="why__body reveal delay-2">
+          <p>
+            We don't believe a website should simply sit online.
+          </p>
+          <p>
+            It should represent you. Communicate clearly.<br>
+            Create trust. Make an impression.<br>
+            And give people a reason to choose you.
+          </p>
+        </div>
+
+        <!-- Words along a visual path -->
+        <div class="why__words reveal delay-3" aria-label="What your digital presence should do">
+          <span class="why__word c-white">REPRESENT</span>
+          <span class="why__word" aria-hidden="true" style="color:rgba(255,255,255,0.1);">—</span>
+          <span class="why__word">COMMUNICATE</span>
+          <span class="why__word" aria-hidden="true" style="color:rgba(255,255,255,0.1);">—</span>
+          <span class="why__word why__word--blue">CONNECT</span>
+          <span class="why__word" aria-hidden="true" style="color:rgba(255,255,255,0.1);">—</span>
+          <span class="why__word">CONVERT</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         ABOUT
+    ═══════════════════════════════════════════════════════ -->
+    <section class="about" id="about" aria-labelledby="about-headline">
+      <div class="about__inner">
+
+        <div class="reveal">
+          <p class="t-label t-label--blue" style="margin-bottom: 1.5rem;">Behind BeKnown</p>
+          <h2 class="about__headline" id="about-headline">
+            BEHIND<br>BEKNOWN.
+          </h2>
+        </div>
+
+        <div class="about__content reveal delay-2">
+          <div class="about__body">
+            <p>
+              BeKnown is a focused digital studio. We work with businesses, professionals and brands who understand that
+              how they show up online matters.
+            </p>
+            <p>
+              We're not the biggest studio. We're not trying to be. We're focused on doing excellent work for the people
+              we work with — and building digital experiences that reflect how good they actually are.
+            </p>
+            <p>
+              Small enough to care. Creative enough to stand out. Technical enough to build it properly.
+            </p>
+          </div>
+
+          <div class="about__values">
+            <div class="about__value">
+              <span class="about__value-dot" aria-hidden="true"></span>
+              Thoughtful, intentional design
+            </div>
+            <div class="about__value">
+              <span class="about__value-dot" aria-hidden="true"></span>
+              Quality over quantity, always
+            </div>
+            <div class="about__value">
+              <span class="about__value-dot" aria-hidden="true"></span>
+              Performance and accessibility by default
+            </div>
+            <div class="about__value">
+              <span class="about__value-dot" aria-hidden="true"></span>
+              Built around your business, not a template
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         FINAL CTA
+    ═══════════════════════════════════════════════════════ -->
+    <section class="cta-final" id="contact" aria-labelledby="cta-headline">
+
+      <!-- Background text watermark -->
+      <div class="cta-final__bg-text" aria-hidden="true">
+        <span class="cta-final__bg-line">GET KNOWN.</span>
+        <span class="cta-final__bg-line" style="padding-left: 4vw;">GET NOTICED.</span>
+        <span class="cta-final__bg-line">GET CHOSEN.</span>
+        <span class="cta-final__bg-line" style="padding-left: 8vw;">GET SALES.</span>
+      </div>
+
+      <div class="cta-final__inner">
+
+        <p class="t-label cta-final__eyebrow reveal">Let's Begin</p>
+
+        <h2 class="cta-final__headline reveal delay-1" id="cta-headline">
+          READY TO<br><em>BE KNOWN</em>?
+        </h2>
+
+        <p class="cta-final__body reveal delay-2">
+          Tell us what you're building, and let's create something worth remembering.
+        </p>
+
+        <div class="cta-final__actions reveal delay-3">
+          <a href="https://wa.me/9613392425" class="btn btn--primary" style="font-size:0.75rem; letter-spacing:0.12em;">
+            START A PROJECT <span class="btn-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a href="mailto:hello@beknownlb.com" class="btn btn--ghost-white"
+            style="font-size:0.75rem; letter-spacing:0.12em;">
+            EMAIL
+          </a>
+        </div>
+
+        <!-- Final dot — end of the journey -->
+        <div class="cta-final__dot bk-dot--pulse" aria-hidden="true"></div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+
+      <div class="footer__top">
+
+        <!-- Brand column -->
+        <div class="footer__brand">
+          <a href="#" aria-label="BeKnown — Home">
+            <img src="images/logo/beknownlb_logo.jpg" alt="BeKnown" class="footer__logo-img" width="100" height="32">
+          </a>
+          <p class="footer__tagline">WEBSITES THAT MAKE AN IMPRESSION</p>
+          <p class="footer__brand-statement">
+            "Digital experiences built for businesses that refuse to be overlooked."
+          </p>
+        </div>
+
+        <!-- Work -->
+        <div class="footer__col">
+          <p class="footer__col-label">Work</p>
+          <ul class="footer__col-links">
+            <li><a href="#work" class="footer__col-link">Selected Work</a></li>
+            <li><a href="https://had1111.github.io/Ali-Murad/" target="_blank" rel="noopener"
+                class="footer__col-link">Ali Murad</a></li>
+            <li><a href="https://had1111.github.io/PlatformOS/restaurants/lume/index.html" target="_blank"
+                rel="noopener" class="footer__col-link">Lumé</a></li>
+            <li><a href="https://had1111.github.io/sunblendlb/" target="_blank" rel="noopener"
+                class="footer__col-link">SunBlend</a></li>
+          </ul>
+        </div>
+
+        <!-- Studio -->
+        <div class="footer__col">
+          <p class="footer__col-label">Studio</p>
+          <ul class="footer__col-links">
+            <li><a href="#services" class="footer__col-link">Services</a></li>
+            <li><a href="#platform" class="footer__col-link">Platform</a></li>
+            <li><a href="#about" class="footer__col-link">About</a></li>
+            <li><a href="#contact" class="footer__col-link">Start a Project</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer__col">
+          <p class="footer__col-label">Connect</p>
+          <ul class="footer__col-links">
+            <li><a href="mailto:hello@beknownlb.com" class="footer__col-link">Email</a></li>
+            <li><a href="https://www.instagram.com/beknownlb/" target="_blank" rel="noopener"
+                class="footer__col-link">Instagram</a></li>
+            <li><a href="https://wa.me/9613392425" target="_blank" rel="noopener" class="footer__col-link">WhatsApp</a>
+            </li>
+            <li><a href="https://had1111.github.io/PlatformOS/" target="_blank" rel="noopener"
+                class="footer__col-link">Partner Login ↗</a></li>
+          </ul>
+        </div>
+
+      </div><!-- /.footer__top -->
+
+      <div class="footer__bottom">
+        <p class="footer__statement">
+          GET KNOWN. GET NOTICED.<br>GET CHOSEN. GET SALES.
+        </p>
+        <p class="footer__copyright">
+          &copy; 2024 BeKnown.<br>
+          beknownlb.com
+        </p>
+      </div>
+
+    </div><!-- /.footer__inner -->
+  </footer>
+
+  <!-- Scripts (no build step needed) -->
+  <script src="js/nav.js" defer></script>
+  <script src="js/hero.js"></script>
+  <script src="js/line.js" defer></script>
+  <script src="js/sections.js" defer></script>
+  <script src="js/main.js" defer></script>
+
+</body>
+
+</html>

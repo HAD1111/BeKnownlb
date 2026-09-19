@@ -1,0 +1,205 @@
+/* ============================================================
+   BeKnown — Hero
+   ============================================================ */
+
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--white);
+  padding-top: 7rem;
+  padding-bottom: 6rem;
+}
+
+/* ── Background subtle texture ────────────────────────────── */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Large editorial number watermark */
+.hero__watermark {
+  position: absolute;
+  right: -2vw;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-display);
+  font-size: clamp(18rem, 32vw, 42rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--gray-100);
+  letter-spacing: -0.05em;
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.55;
+}
+
+/* ── Content ──────────────────────────────────────────────── */
+.hero__inner {
+  position: relative;
+  z-index: 2;
+  padding-inline: var(--gutter);
+  max-width: var(--max-w);
+  margin-inline: auto;
+  width: 100%;
+}
+
+.hero__label {
+  margin-bottom: 2.5rem;
+  opacity: 0;
+}
+
+/* The four-line statement */
+.hero__headline {
+  margin-bottom: 2.5rem;
+}
+
+.hero__line {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 9.5vw, 10.5rem);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  color: var(--navy);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s var(--ease-out-expo),
+              transform 0.9s var(--ease-out-expo);
+}
+
+.hero__line--blue {
+  color: var(--blue);
+}
+
+/* Italic variant for visual rhythm */
+.hero__line em {
+  font-style: italic;
+  color: var(--blue);
+}
+
+/* The last line gets a dot */
+.hero__line--sales {
+  color: var(--navy);
+}
+
+.hero__line--sales .dot {
+  color: var(--blue);
+}
+
+.hero__line.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Supporting copy */
+.hero__body {
+  max-width: 540px;
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s var(--ease-out-expo) 0.5s,
+              transform 0.8s var(--ease-out-expo) 0.5s;
+}
+
+.hero__body.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CTA row */
+.hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s var(--ease-out-expo) 0.7s,
+              transform 0.7s var(--ease-out-expo) 0.7s;
+}
+
+.hero__actions.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll cue */
+.hero__scroll-cue {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  opacity: 0;
+  animation: fadeInUp 1s var(--ease-out-expo) 1.4s forwards;
+}
+
+.hero__scroll-cue span {
+  font-size: 0.625rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+}
+
+.hero__scroll-line {
+  width: 1px;
+  height: 48px;
+  background: linear-gradient(to bottom, var(--gray-300) 0%, transparent 100%);
+  animation: scrollPulse 2.5s ease-in-out infinite 2s;
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.4; transform: scaleY(1); }
+  50% { opacity: 1; transform: scaleY(0.6); }
+}
+
+@keyframes fadeInUp {
+  to { opacity: 1; }
+}
+
+/* SVG Line container */
+.hero__svg-container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    min-height: 100svh;
+  }
+
+  .hero__watermark {
+    font-size: 45vw;
+    right: -5vw;
+    opacity: 0.3;
+  }
+
+  .hero__line {
+    font-size: clamp(3rem, 14vw, 5.5rem);
+  }
+
+  .hero__actions {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero__line {
+    font-size: clamp(2.75rem, 16vw, 4rem);
+  }
+}
