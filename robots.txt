@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://beknownlb.com/sitemap.xml
